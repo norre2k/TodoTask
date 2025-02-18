@@ -53,7 +53,7 @@ if (isset($_POST['Uppgift'])) {
                                                                     //Medans PHP_EOL ser till så att den nya stringen hamnar på en ny rad.
        
          header("Location: " . $_SERVER['PHP_SELF']);  // Uppdaterar sidan så att vi inte fastnar på remove urlen när vi submittar igen
-        exit(); //gör så att man inte behöver submitta 2 gånger efter första delete
+        exit(); //Exit gör så att man inte behöver submitta 2 gånger efter första delete när sidan uppdateras (den avbryter if funktionen)
     }
 }
 
